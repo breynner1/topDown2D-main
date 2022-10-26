@@ -50,4 +50,16 @@ public class Cell : MonoBehaviour
     {
         return "Cell "+x + "," + y;
     }
+    public void Update()
+    {
+        if (isWalkable)
+        {
+            gameObject.GetComponent<SpriteRenderer>().color = Color.blue;
+
+        }
+        else
+        {
+            gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+        }
+    }
 }

@@ -1,10 +1,10 @@
 Using pre-set license
 Built from '2021.1/release' branch; Version is '2021.1.0f1 (61a549675243) revision 6399305'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19043.2130; Version 2009; 64bit' Language: 'es' Physical Memory: 16246 MB
+OS: 'Windows 10 Education; OS build 22000.978; Version 2009; 64bit' Language: 'es' Physical Memory: 8114 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity 2021.1.0f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2021.1.0f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
@@ -15,353 +15,61 @@ E:/topDown2D-main
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57351
+57947
 Successfully changed project path to: E:/topDown2D-main
 E:/topDown2D-main
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 91.06 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 191.30 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.0f1 (61a549675243)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.1.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.0f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path E:/topDown2D-main/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Intel(R) UHD Graphics 630 (ID=0x3e92)
+    Renderer: Intel(R) HD Graphics 4600 (ID=0x412)
     Vendor:   Intel
-    VRAM:     8123 MB
-    Driver:   30.0.101.1340
+    VRAM:     2048 MB
+    Driver:   20.19.15.5126
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity 2021.1.0f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity 2021.1.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity 2021.1.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56880
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.0f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.0f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56128
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity 2021.1.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001805 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006482 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 91.03 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 194.98 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.080 seconds
+- Completed reload, in  8.195 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003633 seconds.
+Registered in 0.085866 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 93.11 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 162.09 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.098 seconds
+- Completed reload, in  3.606 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.64 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
+Refreshing native plugins compatible for Editor in 1.21 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3837 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 144.1 MB.
 System memory in use after: 144.3 MB.
 
 Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 4298.
-Total: 2.768600 ms (FindLiveObjects: 0.284600 ms CreateObjectMapping: 0.185500 ms MarkObjects: 2.246500 ms  DeleteObjects: 0.051300 ms)
+Total: 4.859700 ms (FindLiveObjects: 0.603300 ms CreateObjectMapping: 0.558600 ms MarkObjects: 3.580500 ms  DeleteObjects: 0.114700 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefabs/PowerSource.prefab
-  artifactKey: Guid(152930bb97dca45e9be6ef08cdaea323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PowerSource.prefab using Guid(152930bb97dca45e9be6ef08cdaea323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd48d6b4e333065ceb26c00f3f100427f') in 0.126455 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.704929 seconds.
-  path: Assets/Prefabs/Torre1.prefab
-  artifactKey: Guid(343f4767a2d5f224ba98bed510c33937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Torre1.prefab using Guid(343f4767a2d5f224ba98bed510c33937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c55a44ab474bc0a8239089b5707f87df') in 0.048901 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.197165 seconds.
-  path: Assets/Prefabs/Torre2.prefab
-  artifactKey: Guid(22b68333d9f97ab429a6f962815fddc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Torre2.prefab using Guid(22b68333d9f97ab429a6f962815fddc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '965a19c7fe0be22ed4f5d1cc40eb4403') in 0.049142 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.202284 seconds.
-  path: Assets/Prefabs/Unidad1.prefab
-  artifactKey: Guid(fe08310d0ff756645b95855bc50a6397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Unidad1.prefab using Guid(fe08310d0ff756645b95855bc50a6397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a986dc5377f4dcee20241676b46b6ec4') in 0.051093 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.791332 seconds.
   path: Assets/Prefabs/unidad2.prefab
   artifactKey: Guid(e8d4002ea143343439f26e985cee9581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/unidad2.prefab using Guid(e8d4002ea143343439f26e985cee9581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '728b0c83454ef8254954690eb89fdd02') in 0.049131 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 95.184438 seconds.
-  path: Assets/Prefabs/Torre1.prefab
-  artifactKey: Guid(343f4767a2d5f224ba98bed510c33937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Torre1.prefab using Guid(343f4767a2d5f224ba98bed510c33937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9e8fe5d467e4a3bd4efba8664412e49') in 0.047994 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.325746 seconds.
-  path: Assets/Prefabs/Torre1.prefab
-  artifactKey: Guid(343f4767a2d5f224ba98bed510c33937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Torre1.prefab using Guid(343f4767a2d5f224ba98bed510c33937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fc758a4887f24fae7b92c29c16acca2') in 0.046615 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.458635 seconds.
-  path: Assets/Prefabs/unidad2.prefab
-  artifactKey: Guid(e8d4002ea143343439f26e985cee9581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/unidad2.prefab using Guid(e8d4002ea143343439f26e985cee9581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63ea99f1592b817b251e4e8f70b451fc') in 0.052263 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.427493 seconds.
-  path: Assets/Prefabs/Torre2.prefab
-  artifactKey: Guid(22b68333d9f97ab429a6f962815fddc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Torre2.prefab using Guid(22b68333d9f97ab429a6f962815fddc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8e3cd557fa11d253f19c6fc1b597aa4') in 0.049413 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003402 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.75 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.960 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3825 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 148.0 MB.
-System memory in use after: 148.2 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 4309.
-Total: 4.238700 ms (FindLiveObjects: 0.440200 ms CreateObjectMapping: 0.261100 ms MarkObjects: 3.504500 ms  DeleteObjects: 0.031500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003477 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.947 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3825 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 148.0 MB.
-System memory in use after: 148.3 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 4313.
-Total: 4.449300 ms (FindLiveObjects: 0.643400 ms CreateObjectMapping: 0.413900 ms MarkObjects: 3.361200 ms  DeleteObjects: 0.029100 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 396.961914 seconds.
-  path: Assets/Prefabs/Torre1.prefab
-  artifactKey: Guid(343f4767a2d5f224ba98bed510c33937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Torre1.prefab using Guid(343f4767a2d5f224ba98bed510c33937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56b7814f1cde4e64feb6d26d147ac188') in 0.099622 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 40.151917 seconds.
-  path: Assets/Prefabs/Torre1.prefab
-  artifactKey: Guid(343f4767a2d5f224ba98bed510c33937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Torre1.prefab using Guid(343f4767a2d5f224ba98bed510c33937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90bfbc374dbabbd43de870dfeb8b4f07') in 0.047300 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 104.091511 seconds.
-  path: Assets/Prefabs/Torre1.prefab
-  artifactKey: Guid(343f4767a2d5f224ba98bed510c33937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Torre1.prefab using Guid(343f4767a2d5f224ba98bed510c33937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e7c144c05bc7c6508265649068fe9ae') in 0.048877 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.918839 seconds.
-  path: Assets/Prefabs/Torre2.prefab
-  artifactKey: Guid(22b68333d9f97ab429a6f962815fddc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Torre2.prefab using Guid(22b68333d9f97ab429a6f962815fddc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '924b708684cbd5e3572f0d7fc88e799b') in 0.048349 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003353 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.955 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3825 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 148.1 MB.
-System memory in use after: 148.3 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 4318.
-Total: 6.311300 ms (FindLiveObjects: 0.737000 ms CreateObjectMapping: 0.694800 ms MarkObjects: 4.836200 ms  DeleteObjects: 0.041200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003347 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.937 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.70 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3825 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 148.1 MB.
-System memory in use after: 148.3 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 4322.
-Total: 2.703500 ms (FindLiveObjects: 0.289600 ms CreateObjectMapping: 0.170600 ms MarkObjects: 2.228000 ms  DeleteObjects: 0.014600 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003540 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.929 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3825 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 148.1 MB.
-System memory in use after: 148.4 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 4326.
-Total: 2.705000 ms (FindLiveObjects: 0.322400 ms CreateObjectMapping: 0.192400 ms MarkObjects: 2.175000 ms  DeleteObjects: 0.014400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004862 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.72 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.954 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.02 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3825 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 148.1 MB.
-System memory in use after: 148.4 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 4330.
-Total: 3.012200 ms (FindLiveObjects: 0.335800 ms CreateObjectMapping: 0.177000 ms MarkObjects: 2.482500 ms  DeleteObjects: 0.016000 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 829.869169 seconds.
-  path: Assets/Prefabs/Torre1.prefab
-  artifactKey: Guid(343f4767a2d5f224ba98bed510c33937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Torre1.prefab using Guid(343f4767a2d5f224ba98bed510c33937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54aed8a9d17a48ca24f9aa7ab656fe0e') in 0.096698 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 95.469005 seconds.
-  path: Assets/Prefabs/Torre1.prefab
-  artifactKey: Guid(343f4767a2d5f224ba98bed510c33937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Torre1.prefab using Guid(343f4767a2d5f224ba98bed510c33937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0417815ba5c08b65d28d44eaf1caf4e3') in 0.504504 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.157543 seconds.
-  path: Assets/Prefabs/Torre1.prefab
-  artifactKey: Guid(343f4767a2d5f224ba98bed510c33937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Torre1.prefab using Guid(343f4767a2d5f224ba98bed510c33937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a91b1c4cce5bf0d28d18e26e847328d4') in 0.047883 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.239453 seconds.
-  path: Assets/Prefabs/Torre1.prefab
-  artifactKey: Guid(343f4767a2d5f224ba98bed510c33937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Torre1.prefab using Guid(343f4767a2d5f224ba98bed510c33937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd7b9ded79d20982443f7a0e5e0ce49e') in 0.046863 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 96.385369 seconds.
-  path: Assets/Prefabs/PowerSource.prefab
-  artifactKey: Guid(152930bb97dca45e9be6ef08cdaea323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PowerSource.prefab using Guid(152930bb97dca45e9be6ef08cdaea323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4e0385fb12c1d8b0cff5f2e824fd3cc') in 0.048223 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 186.463349 seconds.
-  path: Assets/Prefabs/Torre1.prefab
-  artifactKey: Guid(343f4767a2d5f224ba98bed510c33937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Torre1.prefab using Guid(343f4767a2d5f224ba98bed510c33937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2455a053a0d7c8d3e7760c99ff5447bf') in 0.044707 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.145103 seconds.
-  path: Assets/Prefabs/Torre2.prefab
-  artifactKey: Guid(22b68333d9f97ab429a6f962815fddc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Torre2.prefab using Guid(22b68333d9f97ab429a6f962815fddc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02670ae5e5eeac56de9926052debfd18') in 0.046746 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 570.479684 seconds.
-  path: Assets/Prefabs/Torre1.prefab
-  artifactKey: Guid(343f4767a2d5f224ba98bed510c33937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Torre1.prefab using Guid(343f4767a2d5f224ba98bed510c33937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '248e3c4c82503408af4e10c0506aa797') in 0.049492 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 172.402140 seconds.
-  path: Assets/Prefabs/PowerSource.prefab
-  artifactKey: Guid(152930bb97dca45e9be6ef08cdaea323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PowerSource.prefab using Guid(152930bb97dca45e9be6ef08cdaea323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e327a4b5da88137d293775bf409b6de') in 0.050553 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 428.721497 seconds.
-  path: Assets/Prefabs/Torre2.prefab
-  artifactKey: Guid(22b68333d9f97ab429a6f962815fddc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Torre2.prefab using Guid(22b68333d9f97ab429a6f962815fddc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fd53d94c56778450798c2c9bf163b24') in 0.045691 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003467 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.012 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3825 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 148.1 MB.
-System memory in use after: 148.4 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 4335.
-Total: 3.461300 ms (FindLiveObjects: 0.373500 ms CreateObjectMapping: 0.245900 ms MarkObjects: 2.821100 ms  DeleteObjects: 0.019900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003439 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.951 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3825 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 148.2 MB.
-System memory in use after: 148.4 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 4339.
-Total: 2.576100 ms (FindLiveObjects: 0.291700 ms CreateObjectMapping: 0.163300 ms MarkObjects: 2.105700 ms  DeleteObjects: 0.014700 ms)
-
+Start importing Assets/Prefabs/unidad2.prefab using Guid(e8d4002ea143343439f26e985cee9581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08be7a8453a8658bb2e3cad3da574e45') in 0.389653 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

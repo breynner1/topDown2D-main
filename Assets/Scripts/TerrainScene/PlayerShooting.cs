@@ -11,9 +11,10 @@ public class PlayerShooting : MonoBehaviour
     public float shootingInterval ;
     private float period = 0.0f;
     public int daño;
-    private bool startShotting = false;
+    private bool startShotting = false,detection = false;
     private Rigidbody2D rb;
     Player jugador;
+    GameObject enemi;
 
     private void Awake()
     {
@@ -28,31 +29,39 @@ public class PlayerShooting : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if ((collision.gameObject.tag == "PowerSource" || collision.gameObject.tag == "Tower")&& gameObject.tag=="Player"&& collision.isTrigger==false)
+        if ((collision.gameObject.tag == "PowerSource" || collision.gameObject.tag == "Tower")&& gameObject.tag=="Player"&& collision.isTrigger==false &&(detection == false|| enemi==collision.gameObject) )
         {
             jugador.startMoving = false;
+            enemi = collision.gameObject;
+            detection = true;
             startShotting = true;
             lookAtTarget(collision.transform);
         }
-        if (collision.gameObject.tag == "Player" && gameObject.tag == "Tower" && collision.isTrigger == false)
+        if (collision.gameObject.tag == "Player" && gameObject.tag == "Tower" && collision.isTrigger == false && (detection == false || enemi == collision.gameObject))
         {
             jugador.startMoving = false;
+            enemi = collision.gameObject;
+            detection = true;
             startShotting = true;
             lookAtTarget(collision.transform);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if ((collision.gameObject.tag == "PowerSource" || collision.gameObject.tag == "Tower") && gameObject.tag == "Player" && collision.isTrigger == false)
+        if ((collision.gameObject.tag == "PowerSource" || collision.gameObject.tag == "Tower") && gameObject.tag == "Player" && collision.isTrigger == false && enemi == collision.gameObject)
         {
             jugador.startMoving = true;
             startShotting = false;
+            enemi = null;
+            detection = false;
             lookAtTarget(collision.transform);
         }
-        if (collision.gameObject.tag == "Player" && gameObject.tag == "Tower" && collision.isTrigger == false)
+        if (collision.gameObject.tag == "Player" && gameObject.tag == "Tower" && collision.isTrigger == false && enemi == collision.gameObject)
         {
             jugador.startMoving = true;
             startShotting = false;
+            enemi = null;
+            detection = false;
             lookAtTarget(collision.transform);
         }
     }

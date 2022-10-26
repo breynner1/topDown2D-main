@@ -188,6 +188,7 @@ MonoBehaviour:
   moveSpeed: 0
   startMoving: 0
   costo: 4
+  M: {fileID: 0}
 --- !u!114 &3882693763190079308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,8 +204,8 @@ MonoBehaviour:
   firePoint: {fileID: 7011392941564689876}
   bulletPrefab: {fileID: 7532033875283359917, guid: 53daf678ff2f731428e3b84cd1347b12, type: 3}
   bulletForce: 10
-  shootingInterval: 0.2
-  "da\xF1o": 30
+  shootingInterval: 0.15
+  "da\xF1o": 33
 --- !u!114 &5756309639089960684
 MonoBehaviour:
   m_ObjectHideFlags: 0

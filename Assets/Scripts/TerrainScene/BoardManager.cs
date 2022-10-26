@@ -11,11 +11,12 @@ public class BoardManager : MonoBehaviour
     [SerializeField] private PowerSource PowerSourcePrefab;
     public List<int[]> ubicacion;
     public Vector2 PowerSourcelocacion;
-    public int dineroU, dineroE;
+    public int dineroU, dineroE, Cunidad;
     private Grid grid;
     private Player player;
     [SerializeField]
     private float moveSpeed = 2f;
+    
 
     private void Awake()
     {
@@ -30,7 +31,7 @@ public class BoardManager : MonoBehaviour
         Instantiate(PowerSourcePrefab, PowerSourcelocacion, Quaternion.identity);
         
         PathManager.Instance.powerUnitLocation = new Vector2Int((int)PowerSourcelocacion.x, (int)PowerSourcelocacion.y);
-
+        Cunidad = 0;
         while (dineroU >= 2)
         {
             int c=Random.Range(0,PlayerPrefab.Length);
@@ -50,10 +51,12 @@ public class BoardManager : MonoBehaviour
                     player = Instantiate(PlayerPrefab[c], new Vector2(a[0], a[1]), Quaternion.identity);
                     player.starMoving(grid, 2);
                     ubicacion.Add(a);
+                    Cunidad++;
                     dineroU = dineroU - PlayerPrefab[c].costo;
                 } 
             
         }
+
         while (dineroE >= 3)
         {
             int c = Random.Range(0, PlayerPrefab.Length);
@@ -66,12 +69,12 @@ public class BoardManager : MonoBehaviour
                     
                     colocar = false;
                 }
-                for (int i = 0; i < aa.Length; i++)
-                {
-                    Debug.Log(aa[i] + "     " + a[0]);
-                }
+                
             }
-
+            if (colocar)
+            {
+                Debug.Log(a[0]+"  "+a[1]);
+            }
             if (PlayerPrefab[c].costo <= dineroE && colocar)
             {
                 player = Instantiate(EnemiPrefab[c], new Vector2(a[0], a[1]), Quaternion.identity);

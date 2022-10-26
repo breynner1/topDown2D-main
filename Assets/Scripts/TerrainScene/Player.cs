@@ -108,5 +108,14 @@ public class Player : MonoBehaviour
             }
         }
     }
-    
+
+    public void Morir()
+    {
+        if (path!=null)
+        {
+            grid.morir((int)path[waypointIndex].transform.position.x,
+                        (int)path[waypointIndex].transform.position.y);
+        }
+        
+    }
 }

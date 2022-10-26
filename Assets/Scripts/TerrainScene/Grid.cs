@@ -71,6 +71,10 @@ public class Grid : ScriptableObject
         gridArray[initialX, initialY].SetWalkable(true);
         gridArray[newX, newY].SetWalkable(false);
     }
+    public void morir(int initialX, int initialY)
+    {
+        gridArray[initialX, initialY].SetWalkable(true);
+    }
 
     public bool isWalkable(int x, int y)
     {
