@@ -42,8 +42,9 @@ public class BoardManager : MonoBehaviour
                 if (a.Equals(aa))
                 {
                     colocar = false;
+                    Debug.Log("khjedkckd");
                 }
-                
+                Debug.Log("353634534");
             }
 
                 if (PlayerPrefab[c].costo <= dineroU && colocar)
@@ -56,7 +57,11 @@ public class BoardManager : MonoBehaviour
                 } 
             
         }
+        foreach (int[] aa in ubicacion)
+        {
+            Debug.Log(aa[0] +"    " +aa[1]);
 
+        }
         while (dineroE >= 3)
         {
             int c = Random.Range(0, PlayerPrefab.Length);
