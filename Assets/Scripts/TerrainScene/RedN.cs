@@ -38,7 +38,7 @@ public class RedN : MonoBehaviour
         return d > 0 ? 1 : 0;
     }
 
-    //#############################################Neurona##########################################################
+    //############################################# Neurona ##########################################################
     class neurona
     {
         
@@ -62,6 +62,10 @@ public class RedN : MonoBehaviour
         }
         public float fun(float d)
         {
+         for (int i = 0; i < peso.Length;i ++)
+            {
+                d = d * peso[i];
+            }
             return d > 0 ? 1 : 0;
         }
     }
