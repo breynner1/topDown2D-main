@@ -448,6 +448,62 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 922222060}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &939065697
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 939065699}
+  - component: {fileID: 939065698}
+  m_Layer: 9
+  m_Name: BoardManager (1)
+  m_TagString: Manager
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &939065698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939065697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9500915d78c3d4f4a96639bbb5b0fa01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CellPrefab: {fileID: -5152743832843653546, guid: dec724f01987447449af4c24ce757670, type: 3}
+  PlayerPrefab:
+  - {fileID: 3694835410204199678, guid: fe08310d0ff756645b95855bc50a6397, type: 3}
+  - {fileID: 4587635388746303466, guid: e8d4002ea143343439f26e985cee9581, type: 3}
+  EnemiPrefab:
+  - {fileID: 8658570003962644523, guid: 343f4767a2d5f224ba98bed510c33937, type: 3}
+  - {fileID: 4687718171400153823, guid: 22b68333d9f97ab429a6f962815fddc5, type: 3}
+  PowerSourcePrefab: {fileID: 2219081163613578378, guid: 152930bb97dca45e9be6ef08cdaea323, type: 3}
+  PowerSourcelocacion: {x: 5, y: 19}
+  dineroU: 20
+  dineroE: 20
+  Cunidad: 0
+  moveSpeed: 2
+--- !u!4 &939065699
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939065697}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 42.35, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1360834470
 GameObject:
   m_ObjectHideFlags: 0

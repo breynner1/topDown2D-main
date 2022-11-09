@@ -115,8 +115,8 @@ public class Player : MonoBehaviour
     {
         if (path!=null)
         {
-            grid.morir((int)path[waypointIndex].transform.position.x,
-                        (int)path[waypointIndex].transform.position.y);
+            grid.morir((int)path[waypointIndex].transform.position.x-(int)postablero.x,
+                        (int)path[waypointIndex].transform.position.y-(int)postablero.y);
         }
         
     }

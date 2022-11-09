@@ -40,9 +40,9 @@ public class BoardManager : MonoBehaviour
         grid.padre.transform.position = this.transform.position;
         pos = this.transform.position;
         grid.padre.transform.parent= this.transform;
-        PowerSourcelocacion=new Vector2((int)(PowerSourcelocacion.x +pos.x), (int)(PowerSourcelocacion.y +(int)pos.y));
+        //PowerSourcelocacion=new Vector2((int)(PowerSourcelocacion.x +pos.x), (int)(PowerSourcelocacion.y +(int)pos.y));
 
-        base_central = Instantiate(PowerSourcePrefab.gameObject, PowerSourcelocacion, Quaternion.identity);
+        base_central = Instantiate(PowerSourcePrefab.gameObject, new Vector2((int)(PowerSourcelocacion.x +pos.x), (int)(PowerSourcelocacion.y +(int)pos.y)), Quaternion.identity);
         
         base_central.gameObject.transform.parent = this.transform;
         PathManager.Instance.powerUnitLocation = new Vector2Int((int)PowerSourcelocacion.x, (int)PowerSourcelocacion.y);
@@ -108,7 +108,7 @@ public class BoardManager : MonoBehaviour
             if (PlayerPrefab[c].costo <= dineroE && colocar)
             {
                 player = Instantiate(EnemiPrefab[c], new Vector2(a[0]+ pos.x, a[1]+pos.y), Quaternion.identity);
-                player.ge = new Vector2Int((int)pos.x, (int)pos.y);
+                player.postablero = new Vector2Int((int)pos.x, (int)pos.y);
                 player.starMoving(grid, 2);
                 ubicacion.Add(a);
                 dineroE = dineroE - EnemiPrefab[c].costo;
