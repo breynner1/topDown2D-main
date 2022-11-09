@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    private GameStateEnum gameState;
+    public GameStateEnum gameState;
 
     private void Awake()
     {

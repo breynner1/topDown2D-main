@@ -22,7 +22,7 @@ public class PathManager : MonoBehaviour
 
     public List<Cell> FindPath(Grid grid, int startx, int starty)
     {
-        //Debug.Log("Find path from " + startx + " " + starty);
+        Debug.Log("Find path from " + startx + " " + starty);
         return FindPath(grid, startx, starty, powerUnitLocation.x, powerUnitLocation.y);
     }
 

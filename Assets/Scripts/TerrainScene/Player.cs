@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float moveSpeed ;
     public Vector2 GetPosition => transform.position;
+    public Vector2 postablero;
     public bool startMoving = false;
     private Grid grid;
     public int costo;
@@ -46,7 +47,8 @@ public class Player : MonoBehaviour
     private void calculatePath()
     {
         waypointIndex = 0;
-        path = PathManager.Instance.FindPath(grid, (int)GetPosition.x, (int)GetPosition.y);
+        Debug.Log("Calculating path" +(int)GetPosition.x + " " + (int)GetPosition.y);
+        path = PathManager.Instance.FindPath(grid, (int)GetPosition.x-(int)postablero.x, (int)GetPosition.y-(int)postablero.y);
     }
 
     public void ResetPosition()
@@ -77,7 +79,7 @@ public class Player : MonoBehaviour
 
             if (changedCells) {
                 changedCells = false;
-                if (!grid.isWalkable((int)path[waypointIndex].transform.position.x, (int)path[waypointIndex].transform.position.y))
+                if (!grid.isWalkable((int)path[waypointIndex].transform.position.x-(int)postablero.x, (int)path[waypointIndex].transform.position.y-(int)postablero.y))
                 {
                     //Debug.Log("not walkable");
                     //path = null;
@@ -85,10 +87,10 @@ public class Player : MonoBehaviour
                     return;
                 } else
                 {
-                    grid.setBusyCell((int)path[waypointIndex - 1].transform.position.x,
-                        (int)path[waypointIndex - 1].transform.position.y,
-                        (int)path[waypointIndex].transform.position.x,
-                        (int)path[waypointIndex].transform.position.y);
+                    grid.setBusyCell(((int)path[waypointIndex - 1].transform.position.x-(int)postablero.x),
+                        ((int)path[waypointIndex - 1].transform.position.y-(int)postablero.y),
+                        ((int)path[waypointIndex].transform.position.x-(int)postablero.x),
+                        ((int)path[waypointIndex].transform.position.y-(int)postablero.y));
                 }
                 
             }

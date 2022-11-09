@@ -24,10 +24,13 @@ public class BoardManager : MonoBehaviour
     {
         Instance = this;
         ubicacion = new List<int[]>();
+        this.transform.position = new Vector3((int)(this.transform.position.x), (int)(this.transform.position.y), (int)(this.transform.position.z));
+
         unidades =new GameObject("Unidades");
         torres = new GameObject("Torres");
         unidades.transform.parent = this.transform;
         torres.transform.parent = this.transform;
+        SetupBoard();
         
     }
     
@@ -37,8 +40,10 @@ public class BoardManager : MonoBehaviour
         grid.padre.transform.position = this.transform.position;
         pos = this.transform.position;
         grid.padre.transform.parent= this.transform;
-        
+        PowerSourcelocacion=new Vector2((int)(PowerSourcelocacion.x +pos.x), (int)(PowerSourcelocacion.y +(int)pos.y));
+
         base_central = Instantiate(PowerSourcePrefab.gameObject, PowerSourcelocacion, Quaternion.identity);
+        
         base_central.gameObject.transform.parent = this.transform;
         PathManager.Instance.powerUnitLocation = new Vector2Int((int)PowerSourcelocacion.x, (int)PowerSourcelocacion.y);
         
@@ -65,6 +70,7 @@ public class BoardManager : MonoBehaviour
                 if (PlayerPrefab[c].costo <= dineroU && colocar)
                 {
                     player = Instantiate(PlayerPrefab[c], new Vector2(a[0]+pos.x, a[1]+pos.y), Quaternion.identity);
+                    player.postablero = new Vector2Int((int)pos.x, (int)pos.y);
                     player.starMoving(grid, 2);
                     ubicacion.Add(a);
                     Cunidad++;
@@ -102,6 +108,7 @@ public class BoardManager : MonoBehaviour
             if (PlayerPrefab[c].costo <= dineroE && colocar)
             {
                 player = Instantiate(EnemiPrefab[c], new Vector2(a[0]+ pos.x, a[1]+pos.y), Quaternion.identity);
+                player.ge = new Vector2Int((int)pos.x, (int)pos.y);
                 player.starMoving(grid, 2);
                 ubicacion.Add(a);
                 dineroE = dineroE - EnemiPrefab[c].costo;
