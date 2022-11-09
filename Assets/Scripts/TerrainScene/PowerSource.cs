@@ -29,6 +29,7 @@ public class PowerSource : MonoBehaviour
                 GameManager.Instance.UpdateGameState(GameManager.GameStateEnum.end);
                 }else
                 {
+                    //borrar luego
                     gameObject.GetComponent<Player>().Morir();
                     if (gameObject.tag == "Player")
                     {

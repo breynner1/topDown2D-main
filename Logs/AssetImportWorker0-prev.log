@@ -1,0 +1,209 @@
+Using pre-set license
+Built from '2021.1/release' branch; Version is '2021.1.0f1 (61a549675243) revision 6399305'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19043.2130; Version 2009; 64bit' Language: 'es' Physical Memory: 16246 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity 2021.1.0f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/USER-PC/Documents/GitHub/topDown2D-main
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+49501
+Successfully changed project path to: C:/Users/USER-PC/Documents/GitHub/topDown2D-main
+C:/Users/USER-PC/Documents/GitHub/topDown2D-main
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 91.07 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.0f1 (61a549675243)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.1.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/USER-PC/Documents/GitHub/topDown2D-main/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) UHD Graphics 630 (ID=0x3e92)
+    Vendor:   Intel
+    VRAM:     8123 MB
+    Driver:   31.0.101.2111
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity 2021.1.0f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity 2021.1.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity 2021.1.0f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56148
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity 2021.1.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001741 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 90.07 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.226 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.004332 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 91.94 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.070 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.73 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3838 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 144.2 MB.
+System memory in use after: 144.4 MB.
+
+Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 4299.
+Total: 3.781400 ms (FindLiveObjects: 0.683100 ms CreateObjectMapping: 0.367600 ms MarkObjects: 2.663100 ms  DeleteObjects: 0.066300 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scripts/TerrainScene/Cell.cs
+  artifactKey: Guid(d1178b9abc2a123479435ed88d3324ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TerrainScene/Cell.cs using Guid(d1178b9abc2a123479435ed88d3324ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '485b93c62aba174957a772c82b76035e') in 0.030794 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006862 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.067 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3826 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.8 MB.
+System memory in use after: 144.1 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 4303.
+Total: 2.587000 ms (FindLiveObjects: 0.316900 ms CreateObjectMapping: 0.164700 ms MarkObjects: 2.088500 ms  DeleteObjects: 0.016300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004390 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.954 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3826 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.9 MB.
+System memory in use after: 144.2 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 4307.
+Total: 2.826900 ms (FindLiveObjects: 0.343000 ms CreateObjectMapping: 0.226000 ms MarkObjects: 2.238800 ms  DeleteObjects: 0.018000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004734 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.023 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3826 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 143.9 MB.
+System memory in use after: 144.2 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 4311.
+Total: 2.536500 ms (FindLiveObjects: 0.319400 ms CreateObjectMapping: 0.197400 ms MarkObjects: 2.002300 ms  DeleteObjects: 0.016400 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004338 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.954 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3826 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 144.0 MB.
+System memory in use after: 144.2 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 4315.
+Total: 2.595900 ms (FindLiveObjects: 0.278600 ms CreateObjectMapping: 0.184100 ms MarkObjects: 2.116900 ms  DeleteObjects: 0.015700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 5842.156152 seconds.
+  path: Assets/Scripts/TerrainScene/Resources
+  artifactKey: Guid(ac73b0e95cbbd0044886b6e3bc86e5db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TerrainScene/Resources using Guid(ac73b0e95cbbd0044886b6e3bc86e5db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c787a5b4a2392397a72330d5e3b2dee1') in 0.013981 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.046827 seconds.
+  path: Assets/Scripts/TerrainScene/Resources/DOTweenSettings.asset
+  artifactKey: Guid(66da3768b5032cc4ebcae4dda4b4e927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TerrainScene/Resources/DOTweenSettings.asset using Guid(66da3768b5032cc4ebcae4dda4b4e927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'effca634c6062c38b1a1ab50dfd497ba') in 0.015024 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 71.200877 seconds.
+  path: Assets/Scripts/TerrainScene/RedN.cs
+  artifactKey: Guid(700a2b833e3f14c4a8ae3971155b3ac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TerrainScene/RedN.cs using Guid(700a2b833e3f14c4a8ae3971155b3ac6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edf6c51755828a97e5ea858fc49e2405') in 0.007360 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.319112 seconds.
+  path: Assets/Scripts/TerrainScene/PowerSource.cs
+  artifactKey: Guid(c170c75925b8f48d2b877941cc03bbc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TerrainScene/PowerSource.cs using Guid(c170c75925b8f48d2b877941cc03bbc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70405eb8ed791dfff128478313a78c08') in 0.006223 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.418893 seconds.
+  path: Assets/Scripts/TerrainScene/PlayerShooting.cs
+  artifactKey: Guid(e1970f25696464989acd1c333b9a01d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TerrainScene/PlayerShooting.cs using Guid(e1970f25696464989acd1c333b9a01d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84176f52b263c07fa640759c69b1e06d') in 0.004955 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.213978 seconds.
+  path: Assets/Scripts/TerrainScene/Player.cs
+  artifactKey: Guid(9db0528b327b78d429877d6a3296d414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TerrainScene/Player.cs using Guid(9db0528b327b78d429877d6a3296d414) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f7ff463de6be664f65c1551dba3c3dc') in 0.007440 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.649783 seconds.
+  path: Assets/Scripts/TerrainScene/PathManager.cs
+  artifactKey: Guid(5368254ee04454fc79423ad8cbc5464f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TerrainScene/PathManager.cs using Guid(5368254ee04454fc79423ad8cbc5464f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3540e83607a1ada35162edb3b91bca20') in 0.006216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.480633 seconds.
+  path: Assets/Scripts/TerrainScene/GridGenerator.cs
+  artifactKey: Guid(7ed499da7aae12548a808689cbc74ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TerrainScene/GridGenerator.cs using Guid(7ed499da7aae12548a808689cbc74ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cb0a5adf367dccac1538b558cb0bbb3') in 0.005158 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1345.925125 seconds.
+  path: Assets/Scripts/TerrainScene/Grid.cs
+  artifactKey: Guid(07e9674b32668444fb46ec7d6f7e7cff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TerrainScene/Grid.cs using Guid(07e9674b32668444fb46ec7d6f7e7cff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b61c5be5d3bd93e31ec4827b6a33048a') in 0.008208 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

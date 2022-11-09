@@ -14,6 +14,8 @@ public class BoardManager : MonoBehaviour
     public int dineroU, dineroE, Cunidad;
     private Grid grid;
     private Player player;
+    GameObject unidades,torres, base_central; 
+    Vector3 pos;
     [SerializeField]
     private float moveSpeed = 2f;
     
@@ -22,15 +24,30 @@ public class BoardManager : MonoBehaviour
     {
         Instance = this;
         ubicacion = new List<int[]>();
+        unidades =new GameObject("Unidades");
+        torres = new GameObject("Torres");
+        unidades.transform.parent = this.transform;
+        torres.transform.parent = this.transform;
+        
     }
     
     public void SetupBoard()
     {
         grid = new Grid(11, 20, 1, CellPrefab);
+        grid.padre.transform.position = this.transform.position;
+        pos = this.transform.position;
+        grid.padre.transform.parent= this.transform;
         
-        Instantiate(PowerSourcePrefab, PowerSourcelocacion, Quaternion.identity);
-        
+        base_central = Instantiate(PowerSourcePrefab.gameObject, PowerSourcelocacion, Quaternion.identity);
+        base_central.gameObject.transform.parent = this.transform;
         PathManager.Instance.powerUnitLocation = new Vector2Int((int)PowerSourcelocacion.x, (int)PowerSourcelocacion.y);
+        
+        crear_torres();
+        crear_unidades ();
+        
+    }
+
+    public void crear_unidades (){
         Cunidad = 0;
         while (dineroU >= 2)
         {
@@ -42,18 +59,17 @@ public class BoardManager : MonoBehaviour
                 if (a.Equals(aa))
                 {
                     colocar = false;
-                    Debug.Log("khjedkckd");
                 }
-                Debug.Log("353634534");
             }
 
                 if (PlayerPrefab[c].costo <= dineroU && colocar)
                 {
-                    player = Instantiate(PlayerPrefab[c], new Vector2(a[0], a[1]), Quaternion.identity);
+                    player = Instantiate(PlayerPrefab[c], new Vector2(a[0]+pos.x, a[1]+pos.y), Quaternion.identity);
                     player.starMoving(grid, 2);
                     ubicacion.Add(a);
                     Cunidad++;
                     dineroU = dineroU - PlayerPrefab[c].costo;
+                    player.transform.parent = unidades.transform;
                 } 
             
         }
@@ -62,6 +78,9 @@ public class BoardManager : MonoBehaviour
             Debug.Log(aa[0] +"    " +aa[1]);
 
         }
+    }
+
+    public void crear_torres(){
         while (dineroE >= 3)
         {
             int c = Random.Range(0, PlayerPrefab.Length);
@@ -82,19 +101,13 @@ public class BoardManager : MonoBehaviour
             }
             if (PlayerPrefab[c].costo <= dineroE && colocar)
             {
-                player = Instantiate(EnemiPrefab[c], new Vector2(a[0], a[1]), Quaternion.identity);
+                player = Instantiate(EnemiPrefab[c], new Vector2(a[0]+ pos.x, a[1]+pos.y), Quaternion.identity);
                 player.starMoving(grid, 2);
                 ubicacion.Add(a);
                 dineroE = dineroE - EnemiPrefab[c].costo;
+                player.transform.parent = torres.transform;
             }
 
         }
-        /*player = Instantiate(PlayerPrefab[0], new Vector2(0, 0), Quaternion.identity);
-
-        player.starMoving(grid, 2);
-
-        player = Instantiate(PlayerPrefab[0], new Vector2(8, 0), Quaternion.identity);
-
-        player.starMoving(grid, 3);*/
     }
 }

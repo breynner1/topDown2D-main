@@ -11,8 +11,8 @@ public class Grid : ScriptableObject
     private int height;
     private int cellSize;
     private Cell cellPrefab;
-    private Cell[,] gridArray;
-
+    public Cell[,] gridArray;
+    public GameObject padre;
 
     public Grid(int width, int height, int cellSize, Cell cellPrefab)
     {
@@ -29,18 +29,17 @@ public class Grid : ScriptableObject
     {
         Cell cell;
         gridArray = new Cell[width, height];
-        GameObject parent = new GameObject("TerrainParent");
-
+        padre = new GameObject("Terrainpadre");
         for (int i = 0; i < width; i++)
         {
             for (int j = 0; j < height; j++)
             {
                 var p = new Vector2(i, j) * cellSize;
-                cell = Instantiate(cellPrefab, p, Quaternion.identity);
-                //cell.transform.SetParent(parent.transform);
+                cell = Instantiate(cellPrefab,  p, Quaternion.identity);
+                //cell.transform.Setpadre(padre.transform);
                 cell.Init(this, (int)p.x, (int)p.y, true);
 
-                cell.transform.SetParent(parent.transform);
+                cell.transform.SetParent(padre.transform);
 
                 //if (Random.Range(0, 10) <= 2)
                 //    cell.SetWalkable(false);
