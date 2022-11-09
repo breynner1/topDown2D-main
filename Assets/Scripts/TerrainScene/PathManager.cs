@@ -22,13 +22,14 @@ public class PathManager : MonoBehaviour
 
     public List<Cell> FindPath(Grid grid, int startx, int starty)
     {
-        Debug.Log("Find path from " + startx + " " + starty);
         return FindPath(grid, startx, starty, powerUnitLocation.x, powerUnitLocation.y);
     }
 
     public List<Cell> FindPath(Grid grid, int startx, int starty, int endx, int endy)
     {
         this.grid = grid;
+        Debug.Log(startx+" a "+starty);
+        Debug.Log(endx+" b "+endy);
         Cell startCell = grid.GetGridObject(startx, starty);
         Cell endCell = grid.GetGridObject(endx, endy);
 

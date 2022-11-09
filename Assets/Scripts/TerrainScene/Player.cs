@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     private bool changedCells = false;
     private Rigidbody2D rb;
     GameObject base1;
+    public Vector2Int powerUnitLocation;
 
     // Index of current waypoint from which Enemy walks
     // to the next one
@@ -47,8 +48,8 @@ public class Player : MonoBehaviour
     private void calculatePath()
     {
         waypointIndex = 0;
-        Debug.Log("Calculating path" +(int)GetPosition.x + " " + (int)GetPosition.y);
-        path = PathManager.Instance.FindPath(grid, (int)GetPosition.x-(int)postablero.x, (int)GetPosition.y-(int)postablero.y);
+        path = PathManager.Instance.FindPath(grid, (int)GetPosition.x-(int)postablero.x, (int)GetPosition.y-(int)postablero.y,powerUnitLocation.x,powerUnitLocation.y);   
+        
     }
 
     public void ResetPosition()
@@ -60,7 +61,6 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.tag == "PowerSource")
         {
-            Debug.Log("Made it");
             path = null;
         }
     }
